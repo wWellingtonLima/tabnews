@@ -3,8 +3,8 @@ name: Linting
 on: pull_request
 
 jobs:
-  jest:
-    name: Linting
+  prettier:
+    name: Prettier
     runs-on: ubuntu-latest
 
     steps:
