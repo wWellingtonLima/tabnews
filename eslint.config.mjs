@@ -1,4 +1,5 @@
 import globals from "globals";
+import js from "@eslint/js";
 import react from "eslint-plugin-react";
 import jest from "eslint-plugin-jest";
 import { defineConfig } from "eslint/config";
@@ -11,7 +12,8 @@ export default defineConfig([
       "infra/**/*.{js,mjs,cjs,jsx}",
       "pages/**/*.{js,mjs,cjs,jsx}",
     ],
-    plugins: { react },
+    plugins: { react, js },
+    extends: ["js/recommended"],
     languageOptions: {
       globals: {
         ...globals.browser,
