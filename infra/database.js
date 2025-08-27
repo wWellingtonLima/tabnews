@@ -3,6 +3,8 @@ import { Client } from "pg";
 async function query(queryObj) {
   let client;
 
+  let test;
+
   try {
     client = await getNewClient();
     const res = await client.query(queryObj);
